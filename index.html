@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Vue App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+   
+  </head>
+  <body>
+   <section id="app" class="simple-app">
+       <h1>Simple Addition App</h1>
+       <small>This app can add upto 50</small>
+       <diV class="name-input">
+           <input v-on:input="setName($event)" class="input" type="text"  placeholder="enter name" >
+           <h1>{{name}}</h1>
+       </diV>
+       <diV class="addition-input">
+           <input v-on:input="setFirstNum($event)" v-bind:value="firstNum"  class="a-input" type="text"  placeholder="First Number" >
+           +
+           <input v-on:input="setSecondNum($event)" v-bind:value="secondNum"  class="a-input" type="text"  placeholder="Second Number" ><br>
+           <button v-on:click="add()" class="btn">Add</button>
+           <h3>Total: {{finalTotal}}</h3>
+       </diV>
+   </section>
+  </body>
+</html>
