@@ -6,7 +6,7 @@ This is a simple vue app off summation.
 
   <li>Download Live Server <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">click here to download</a></p> </li>
 
-  <li>Clone the repository.Clone Link: https://github.com/NoorMohammadTalukder/VUE-3.git</li>
+  <li>Clone the repository.Clone Link: https://github.com/NoorMohammadTalukder/Simple-Addtion-VUE-App.git</li>
 
   <li>Open the desire folder you want to run with VS code</li>
 
